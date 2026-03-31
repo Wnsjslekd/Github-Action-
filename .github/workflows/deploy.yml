@@ -4,3 +4,12 @@ on:
   push:
     branches:
       - main
+
+# Wordflow는 여러개의 Job으로 , Jop은 여러개의 Step으로 이루어짐
+jobs:
+  My-Deploy-Job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello World 출력하기
+        run: echo "hello World"
